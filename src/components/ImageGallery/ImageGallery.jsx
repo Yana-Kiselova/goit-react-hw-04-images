@@ -39,7 +39,7 @@ export const ImageGallery = ({ searchQuery }) => {
 
     setStatus('pending');
     fetchImage();
-  }, [searchQuery, page]);
+  }, [searchQuery, page]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchImage = () => {
     fetch(
